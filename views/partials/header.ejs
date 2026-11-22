@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Brand Logo -->
+          <!-- Brand Logo -->
+          <!-- Brand Logo -->
+          <a href="/" class="flex items-center gap-3">
+            <img
+              src="/images/logo.png"
+              alt="Logo <%= info.nama %>"
+              class="w-12 h-12 object-contain rounded-xl bg-white p-1 shadow-sm border border-slate-100"
+            />
+            <div>
+              <span
+                class="block font-extrabold text-emerald-950 text-base sm:text-lg leading-tight"
+                ><%= info.nama %></span
+              >
+              <span class="block text-xs text-amber-600 font-bold"
+                ><%= info.cabang %></span
+              >
+            </div>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700"
+          >
+            <a href="#tentang" class="hover:text-emerald-700 transition"
+              >Tentang Kami</a
+            >
+            <a href="#produk" class="hover:text-emerald-700 transition"
+              >Produk & Akad</a
+            >
+            <a href="#simulasi" class="hover:text-emerald-700 transition"
+              >Simulasi Pembiayaan</a
+            >
+            <a
+              href="#daftar"
+              class="px-5 py-2.5 rounded-full bg-emerald-800 text-white hover:bg-emerald-900 transition shadow"
+            >
+              Gabung Anggota
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-slate-700 text-2xl focus:outline-none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-5 space-y-3 text-sm font-semibold"
+      >
+        <a
+          href="#tentang"
+          class="block py-2 text-slate-700 hover:text-emerald-700"
+          >Tentang Kami</a
+        >
+        <a
+          href="#produk"
+          class="block py-2 text-slate-700 hover:text-emerald-700"
+          >Produk & Akad</a
+        >
+        <a
+          href="#simulasi"
+          class="block py-2 text-slate-700 hover:text-emerald-700"
+          >Simulasi Pembiayaan</a
+        >
+        <a
+          href="#daftar"
+          class="block text-center py-2.5 rounded-lg bg-emerald-800 text-white"
+          >Gabung Anggota</a
+        >
+      </div>
+    </nav>
+  </body>
+</html>

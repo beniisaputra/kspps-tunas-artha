@@ -1,0 +1,1142 @@
+<%- include('partials/header') %>
+
+<!-- Hero Section -->
+<section class="islamic-pattern text-white py-20 lg:py-28">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+  >
+    <div>
+      <span
+        class="inline-block px-4 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600 text-amber-300 text-xs font-bold tracking-wide uppercase mb-5"
+      >
+        Solusi Keuangan Syariah Terpercaya
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
+        Kembangkan Usaha & Simpanan Berkah Bersama
+        <span class="text-amber-400"><%= info.singkatan %></span>
+      </h1>
+      <p class="text-emerald-100 text-base sm:text-lg leading-relaxed mb-8">
+        Hadir melayani anggota dengan prinsip syariah yang adil, transparan, dan
+        bebas riba untuk mendukung kesejahteraan keluarga serta kemajuan UMKM.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#daftar"
+          class="px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold shadow-lg transition"
+        >
+          Daftar Jadi Anggota
+        </a>
+        <a
+          href="#simulasi"
+          class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold transition"
+        >
+          Hitung Simulasi
+        </a>
+      </div>
+    </div>
+
+    <!-- Kartu Keunggulan -->
+    <div
+      class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 sm:p-8 space-y-5"
+    >
+      <div class="flex items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-white">100% Akad Syariah</h3>
+          <p class="text-sm text-emerald-100/80">
+            Menggunakan akad Wadiah, Mudharabah, Murabahah, dan Ijarah yang
+            diawasi Dewan Pengawas Syariah.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-white">
+            Angsuran Bulanan & Mingguan
+          </h3>
+          <p class="text-sm text-emerald-100/80">
+            Fleksibilitas pembayaran angsuran bulanan atau mingguan dengan
+            layanan jemput setoran bagi pelaku usaha.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-white">Amanah & Transparan</h3>
+          <p class="text-sm text-emerald-100/80">
+            Pengelolaan dana anggota yang akuntabel dengan pembagian SHU (Sisa
+            Hasil Usaha) tahunan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="tentang" class="py-16 lg:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+    <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider"
+      >Tentang Lembaga</span
+    >
+    <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-5">
+      Mitra Keuangan Syariah Keluarga & UMKM
+    </h2>
+    <p class="text-slate-600 leading-relaxed">
+      <strong><%= info.nama %></strong> merupakan Koperasi Simpan Pinjam dan
+      Pembiayaan Syariah yang berbadan hukum resmi. Kami hadir menjembatani
+      kebutuhan permodalan usaha mikro serta perencanaan simpanan masa depan
+      masyarakat dengan prinsip tolong-menolong (<em>ta'awun</em>).
+    </p>
+  </div>
+</section>
+
+<!-- Legalitas & Alur Pengajuan -->
+<section class="py-14 bg-emerald-50/70 border-t border-emerald-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+    <!-- Badge Legalitas & DPS -->
+    <div
+      class="bg-white rounded-2xl p-6 sm:p-8 border border-emerald-200/80 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left"
+    >
+      <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 text-sm">Berbadan Hukum Resmi</h4>
+          <p class="text-xs text-slate-600 mt-1">
+            Terdaftar dan diawasi oleh Kementerian Koperasi & UKM Republik
+            Indonesia.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-book-quran"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 text-sm">
+            Dewan Pengawas Syariah
+          </h4>
+          <p class="text-xs text-slate-600 mt-1">
+            Seluruh produk simpanan dan pembiayaan mengacu pada fatwa DSN-MUI.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl shrink-0"
+        >
+          <i class="fa-solid fa-motorcycle"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 text-sm">
+            Layanan Jemput Setoran
+          </h4>
+          <p class="text-xs text-slate-600 mt-1">
+            Petugas lapangan siap melayani setoran simpanan maupun angsuran
+            mingguan/bulanan ke lokasi Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Langkah Mudah Bergabung & Persyaratan -->
+    <div>
+      <div class="text-center mb-8">
+        <span
+          class="text-emerald-700 font-bold text-xs uppercase tracking-wider"
+          >Alur & Persyaratan</span
+        >
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Cara Menjadi Anggota & Pengajuan
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 relative">
+          <span
+            class="w-8 h-8 rounded-full bg-emerald-800 text-white font-bold text-sm flex items-center justify-center mb-4"
+            >1</span
+          >
+          <h4 class="font-bold text-slate-900 mb-2">Siapkan Dokumen Dasar</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Fotokopi E-KTP pemohon (dan pasangan jika sudah menikah), Kartu
+            Keluarga (KK), serta keterangan usaha/slip penghasilan untuk
+            pengajuan pembiayaan.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 relative">
+          <span
+            class="w-8 h-8 rounded-full bg-emerald-800 text-white font-bold text-sm flex items-center justify-center mb-4"
+            >2</span
+          >
+          <h4 class="font-bold text-slate-900 mb-2">Konsultasi & Verifikasi</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Isi formulir online atau datang ke kantor. Petugas kami akan
+            membantu menghitung skema angsuran bulanan/mingguan terbaik dan
+            melakukan silaturahmi/survei.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 relative">
+          <span
+            class="w-8 h-8 rounded-full bg-amber-500 text-emerald-950 font-bold text-sm flex items-center justify-center mb-4"
+            >3</span
+          >
+          <h4 class="font-bold text-slate-900 mb-2">
+            Akad Syariah & Pencairan
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Setelah disetujui, dilakukan penandatanganan akad sesuai prinsip
+            syariah secara transparan dan dana langsung dicairkan tanpa potongan
+            tersembunyi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Katalog Produk & Akad -->
+<section
+  id="produk"
+  class="py-16 lg:py-20 bg-slate-50 border-t border-slate-200/70"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider"
+        >Layanan Unggulan</span
+      >
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+        Produk Simpanan & Pembiayaan
+      </h2>
+
+      <!-- Tab Buttons -->
+      <div
+        class="inline-flex bg-white p-1.5 rounded-full border border-slate-200 shadow-sm mt-6"
+      >
+        <button
+          id="tab-simpanan"
+          class="px-6 py-2.5 rounded-full font-semibold text-sm bg-emerald-800 text-white shadow transition"
+        >
+          Simpanan Syariah
+        </button>
+        <button
+          id="tab-pembiayaan"
+          class="px-6 py-2.5 rounded-full font-semibold text-sm text-emerald-900 hover:bg-emerald-50 transition"
+        >
+          Pembiayaan Syariah
+        </button>
+      </div>
+    </div>
+
+    <!-- Konten Simpanan -->
+    <div id="content-simpanan" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold"
+          >Akad Wadiah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Simpanan Sukarela Berkah
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Titipan dana aman tanpa potongan administrasi bulanan, dapat ditarik
+          sewaktu-waktu saat dibutuhkan.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Setoran
+            awal ringan mulai Rp 20.000
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Bebas
+            biaya admin bulanan
+          </li>
+        </ul>
+      </div>
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold"
+          >Akad Mudharabah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Simpanan Berjangka / Deposito
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Investasi syariah dengan nisbah bagi hasil kompetitif untuk jangka
+          waktu 3, 6, hingga 12 bulan.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Bagi hasil
+            halal & transparan
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Dapat
+            dijadikan jaminan pembiayaan
+          </li>
+        </ul>
+      </div>
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold"
+          >Akad Mudharabah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Simpanan Pendidikan & Qurban
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Perencanaan dana pendidikan anak dan ibadah qurban secara bertahap dan
+          terencana.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Setoran
+            rutin <strong>mingguan / bulanan</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Layanan
+            jemput setoran
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Konten Pembiayaan -->
+    <div
+      id="content-pembiayaan"
+      class="hidden grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold"
+          >Akad Murabahah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Pembiayaan Modal & Barang
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Fasilitas pengadaan barang dagangan, peralatan usaha, atau kendaraan
+          dengan margin tetap hingga lunas.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Angsuran
+            tetap tidak berubah
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Pilihan
+            bayar <strong>Bulanan</strong> atau <strong>Mingguan</strong>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold"
+          >Akad Mudharabah / Musyarakah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Pembiayaan Modal Kerja UMKM
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Kemitraan permodalan usaha produktif dengan sistem bagi hasil sesuai
+          kesepakatan bersama.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Plafon Rp
+            1 Juta – Rp 100 Juta
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Skema
+            angsuran <strong>Bulanan / Mingguan</strong>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+      >
+        <span
+          class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold"
+          >Akad Multijasa Ijarah</span
+        >
+        <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">
+          Pembiayaan Multijasa Syariah
+        </h3>
+        <p class="text-sm text-slate-600 mb-4">
+          Solusi pembiayaan kebutuhan biaya pendidikan, kesehatan, renovasi,
+          maupun hajatan keluarga.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-1.5">
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Proses
+            verifikasi cepat
+          </li>
+          <li>
+            <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Bebas
+            denda keterlambatan ribawi
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Banner Promo Pembiayaan -->
+<section class="bg-amber-50 border-y border-amber-200/80 py-6">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4"
+  >
+    <div class="flex items-center gap-4 text-center md:text-left">
+      <div
+        class="w-12 h-12 rounded-2xl bg-amber-500 text-emerald-950 flex items-center justify-center text-xl shrink-0 shadow-sm mx-auto md:mx-0"
+      >
+        <i class="fa-solid fa-gift"></i>
+      </div>
+      <div>
+        <span
+          class="inline-block px-2.5 py-0.5 rounded-md bg-emerald-800 text-white text-[11px] font-bold uppercase tracking-wider mb-1"
+        >
+          Program Khusus UMKM & Anggota Baru
+        </span>
+        <h3 class="font-extrabold text-emerald-950 text-base sm:text-lg">
+          Proses Survei Cepat & Tanpa Potongan Tersembunyi!
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600">
+          Nikmati kemudahan angsuran ringan mingguan (mulai Rp 114rb/mgg) atau
+          bulanan dengan pendampingan langsung petugas lapangan.
+        </p>
+      </div>
+    </div>
+    <a
+      href="#daftar"
+      class="shrink-0 px-6 py-3 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs sm:text-sm shadow transition"
+    >
+      Klaim Konsultasi Gratis
+    </a>
+  </div>
+</section>
+
+<!-- Kuis Cek Rekomendasi Pembiayaan (15 Detik) -->
+<section class="py-16 bg-slate-50 border-t border-slate-200/70">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="bg-white rounded-3xl p-6 sm:p-10 border border-emerald-200 shadow-sm"
+    >
+      <div class="text-center mb-8">
+        <span
+          class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wider"
+        >
+          Bantuan Pilih Produk • 15 Detik
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+          Bingung Pilih Pembiayaan yang Pas?
+        </h2>
+        <p class="text-sm text-slate-600 mt-1">
+          Jawab 3 pertanyaan singkat berikut untuk melihat rekomendasi akad &
+          skema cicilan terbaik untuk Anda.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+        <!-- Pertanyaan 1 -->
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+          <label
+            class="block text-xs font-bold uppercase tracking-wider text-emerald-800 mb-2"
+          >
+            1. Tujuan Dana
+          </label>
+          <select
+            id="kuis-tujuan"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-emerald-600 focus:outline-none"
+          >
+            <option value="modal_dagang">Modal Warung / Dagang Harian</option>
+            <option value="alat_usaha">Beli Peralatan / Kendaraan Usaha</option>
+            <option value="kebutuhan_keluarga">
+              Biaya Pendidikan / Kesehatan / Renovasi
+            </option>
+          </select>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+          <label
+            class="block text-xs font-bold uppercase tracking-wider text-emerald-800 mb-2"
+          >
+            2. Arus Penghasilan
+          </label>
+          <select
+            id="kuis-penghasilan"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-emerald-600 focus:outline-none"
+          >
+            <option value="harian">Omzet Harian / Mingguan</option>
+            <option value="bulanan">Gaji / Pendapatan Bulanan</option>
+          </select>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+          <label
+            class="block text-xs font-bold uppercase tracking-wider text-emerald-800 mb-2"
+          >
+            3. Perkiraan Kebutuhan
+          </label>
+          <select
+            id="kuis-nominal"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-emerald-600 focus:outline-none"
+          >
+            <option value="kecil">Rp 1 Juta – Rp 2,5 Juta</option>
+            <option value="menengah">Rp 3 Juta – Rp 10 Juta</option>
+            <option value="besar">Di atas Rp 10 Juta</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Box Hasil Rekomendasi Otomatis -->
+      <div
+        class="bg-emerald-900 text-white rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6"
+      >
+        <div class="space-y-1.5 text-center sm:text-left">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-amber-400"
+          >
+            Rekomendasi Terbaik Untuk Anda:
+          </span>
+          <h3 id="kuis-hasil-judul" class="text-lg sm:text-xl font-extrabold">
+            Pembiayaan Modal Kerja (Akad Mudharabah) • Bayar Mingguan
+          </h3>
+          <p
+            id="kuis-hasil-deskripsi"
+            class="text-xs sm:text-sm text-emerald-100/90"
+          >
+            Cocok untuk perputaran modal warung/dagang dengan angsuran ringan Rp
+            114.000/minggu (tenor 10 minggu) dan layanan jemput setoran.
+          </p>
+        </div>
+        <button
+          type="button"
+          id="btn-terapkan-rekomendasi"
+          class="shrink-0 w-full sm:w-auto px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold text-sm shadow-lg transition"
+        >
+          Simulasikan Paket Ini <i class="fa-solid fa-arrow-down ml-1"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Simulasi Pembiayaan -->
+<section id="simulasi" class="py-16 lg:py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-emerald-950 text-white rounded-3xl p-6 sm:p-10 shadow-xl">
+      <div class="text-center mb-8">
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-wider"
+          >Kalkulator Syariah</span
+        >
+        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">
+          Simulasi Angsuran Pembiayaan
+        </h2>
+        <p class="text-xs sm:text-sm text-emerald-200 mt-2">
+          Tersedia pilihan pembayaran <strong>Bulanan</strong> (mulai Rp 3 Juta)
+          maupun <strong>Mingguan</strong> (mulai Rp 1 Juta).
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-5">
+          <!-- Pilihan Skema Pembayaran (Bulanan / Mingguan) -->
+          <div>
+            <label class="block text-sm font-semibold mb-2"
+              >Skema Pembayaran Angsuran</label
+            >
+            <div
+              class="grid grid-cols-2 gap-2.5 bg-emerald-900/90 p-1.5 rounded-xl border border-emerald-700"
+            >
+              <button
+                type="button"
+                id="btn-skema-bulanan"
+                class="py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold bg-amber-500 text-emerald-950 shadow transition"
+              >
+                Bayar Bulanan
+              </button>
+              <button
+                type="button"
+                id="btn-skema-mingguan"
+                class="py-2.5 px-3 rounded-lg text-xs sm:text-sm font-semibold text-emerald-200 hover:text-white transition"
+              >
+                Bayar Mingguan
+              </button>
+            </div>
+            <input type="hidden" id="skema-pembayaran" value="bulanan" />
+          </div>
+
+          <!-- Plafon -->
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span>Jumlah Plafon</span>
+              <span id="plafon-display" class="text-amber-400 font-bold"
+                >Rp 5.000.000</span
+              >
+            </div>
+            <input
+              id="plafon-range"
+              type="range"
+              min="3000000"
+              max="100000000"
+              step="1000000"
+              value="5000000"
+              class="w-full"
+            />
+            <div class="flex justify-between text-xs text-emerald-300 mt-1">
+              <span id="plafon-min-label">Min. Rp 3 Juta</span>
+              <span id="plafon-max-label">Maks. Rp 100 Juta</span>
+            </div>
+          </div>
+
+          <!-- Tenor (Berubah otomatis sesuai Plafon & Bulanan / Mingguan) -->
+          <div>
+            <label id="tenor-label" class="block text-sm font-semibold mb-2"
+              >Jangka Waktu (Bulan)</label
+            >
+            <select
+              id="tenor-select"
+              class="w-full rounded-xl bg-emerald-900 border border-emerald-700 px-4 py-3 text-sm text-white focus:outline-none"
+            >
+              <!-- Opsi diisi otomatis oleh script.js -->
+            </select>
+            <p id="tenor-note" class="text-xs text-amber-300/90 mt-1.5">
+              *Plafon Rp 10 Juta ke bawah maksimal tenor 12 bulan.
+            </p>
+          </div>
+
+          <!-- Akad -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">Pilihan Akad</label>
+            <select
+              id="akad-select"
+              class="w-full rounded-xl bg-emerald-900 border border-emerald-700 px-4 py-3 text-sm text-white focus:outline-none"
+            >
+              <option value="0.02">
+                Murabahah (Jual Beli - Margin 2%/bln)
+              </option>
+              <option value="0.02">
+                Mudharabah (Bagi Hasil - Estimasi 2%/bln)
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Hasil Perhitungan -->
+        <div
+          class="bg-emerald-900/80 border border-emerald-700/80 rounded-2xl p-6 text-center"
+        >
+          <span
+            id="angsuran-subtitle"
+            class="text-xs uppercase tracking-wider text-emerald-300"
+          >
+            Estimasi Angsuran Bulanan (12x Bayar)
+          </span>
+          <div
+            id="angsuran-display"
+            class="text-3xl sm:text-4xl font-extrabold text-amber-400 my-3"
+          >
+            Rp 516.667 / bln
+          </div>
+          <div
+            id="keterangan-skema"
+            class="inline-block px-3 py-1 rounded-full bg-emerald-800 text-emerald-200 text-xs mb-4"
+          >
+            Margin 2% per bulan • Jatuh tempo bulanan
+          </div>
+          <p class="text-xs text-emerald-200/80 mb-6">
+            *Nilai di atas merupakan simulasi estimasi. Perhitungan resmi
+            disesuaikan saat akad di kantor koperasi.
+          </p>
+          <button
+            id="btn-ajukan-simulasi"
+            class="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold transition shadow mb-3"
+          >
+            Ajukan Pembiayaan Ini
+          </button>
+          <button
+            type="button"
+            id="btn-lihat-tabel"
+            class="w-full py-2.5 rounded-xl bg-emerald-800/80 hover:bg-emerald-800 border border-emerald-600 text-emerald-100 font-semibold text-xs sm:text-sm transition flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-table-list"></i> Lihat Tabel Rincian Angsuran
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (Pertanyaan Umum) -->
+<section class="py-16 bg-white border-t border-slate-200/70">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider"
+        >Tanya Jawab</span
+      >
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+        Pertanyaan yang Sering Diajukan
+      </h2>
+    </div>
+
+    <div class="space-y-3" id="faq-container">
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button
+          type="button"
+          class="faq-btn w-full px-6 py-4 text-left font-bold text-sm sm:text-base text-slate-800 flex justify-between items-center hover:bg-slate-50 transition"
+        >
+          <span
+            >Apa perbedaan pembiayaan syariah di sini dengan pinjaman
+            konvensional?</span
+          >
+          <i
+            class="fa-solid fa-chevron-down text-emerald-700 text-xs transition-transform"
+          ></i>
+        </button>
+        <div
+          class="faq-answer hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
+        >
+          Kami tidak menggunakan sistem bunga berbunga (riba). Transaksi
+          menggunakan akad jual beli (<em>Murabahah</em>) dengan margin
+          keuntungan tetap yang disepakati di awal, atau akad kemitraan bagi
+          hasil (<em>Mudharabah/Musyarakah</em>) sesuai syariat Islam.
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button
+          type="button"
+          class="faq-btn w-full px-6 py-4 text-left font-bold text-sm sm:text-base text-slate-800 flex justify-between items-center hover:bg-slate-50 transition"
+        >
+          <span>Apakah angsuran mingguan bisa dijemput ke tempat usaha?</span>
+          <i
+            class="fa-solid fa-chevron-down text-emerald-700 text-xs transition-transform"
+          ></i>
+        </button>
+        <div
+          class="faq-answer hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
+        >
+          Bisa. Bagi anggota pelaku usaha/pedagang yang memilih skema bayar
+          mingguan atau menabung rutin, petugas lapangan kami menyediakan
+          layanan jemput setoran langsung ke toko/tempat usaha Anda.
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-2xl overflow-hidden">
+        <button
+          type="button"
+          class="faq-btn w-full px-6 py-4 text-left font-bold text-sm sm:text-base text-slate-800 flex justify-between items-center hover:bg-slate-50 transition"
+        >
+          <span>Apa saja syarat awal untuk mendaftar sebagai anggota?</span>
+          <i
+            class="fa-solid fa-chevron-down text-emerald-700 text-xs transition-transform"
+          ></i>
+        </button>
+        <div
+          class="faq-answer hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
+        >
+          Cukup melampirkan fotokopi KTP dan Kartu Keluarga yang masih berlaku,
+          serta menyetorkan Simpanan Pokok dan Simpanan Wajib anggota dengan
+          nominal yang sangat terjangkau.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoni Anggota & Pelaku UMKM -->
+<section class="py-16 bg-emerald-950 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="text-amber-400 font-bold text-xs uppercase tracking-wider"
+        >Kisah Sukses Anggota</span
+      >
+      <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">
+        Dipercaya Pelaku Usaha & Keluarga
+      </h2>
+      <p class="text-sm text-emerald-200/80 mt-2 max-w-2xl mx-auto">
+        Pengalaman para anggota <%= info.cabang %> dalam mengembangkan usaha dan
+        merencanakan simpanan syariah.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Testimoni 1 -->
+      <div
+        class="bg-emerald-900/70 border border-emerald-800 p-6 rounded-2xl flex flex-col justify-between"
+      >
+        <div>
+          <div class="text-amber-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-emerald-100 leading-relaxed italic mb-5">
+            "Alhamdulillah terbantu sekali dengan pembiayaan modal kerja
+            mingguan. Petugasnya rutin jemput setoran ke warung, jadi tidak
+            mengganggu waktu jualan."
+          </p>
+        </div>
+        <div
+          class="flex items-center gap-3 border-t border-emerald-800/80 pt-4"
+        >
+          <div
+            class="w-10 h-10 rounded-full bg-amber-500 text-emerald-950 font-bold flex items-center justify-center text-sm"
+          >
+            SH
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-white">Ibu Siti Hajar</h4>
+            <span class="text-xs text-emerald-300"
+              >Pedagang Sembako • Anggota Pembiayaan</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div
+        class="bg-emerald-900/70 border border-emerald-800 p-6 rounded-2xl flex flex-col justify-between"
+      >
+        <div>
+          <div class="text-amber-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-emerald-100 leading-relaxed italic mb-5">
+            "Akadnya jelas dari awal dan tanpa biaya tersembunyi. Angsuran
+            bulanan tetap sampai lunas, sangat menenangkan untuk pengembangan
+            bengkel."
+          </p>
+        </div>
+        <div
+          class="flex items-center gap-3 border-t border-emerald-800/80 pt-4"
+        >
+          <div
+            class="w-10 h-10 rounded-full bg-amber-500 text-emerald-950 font-bold flex items-center justify-center text-sm"
+          >
+            DR
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-white">Bapak Dedi Rosadi</h4>
+            <span class="text-xs text-emerald-300"
+              >Pengusaha Bengkel • Anggota Murabahah</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div
+        class="bg-emerald-900/70 border border-emerald-800 p-6 rounded-2xl flex flex-col justify-between"
+      >
+        <div>
+          <div class="text-amber-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-emerald-100 leading-relaxed italic mb-5">
+            "Ikut simpanan qurban dan simpanan sukarela di sini sangat nyaman.
+            Bebas potongan admin bulanan dan pelayanan petugas di kantor sangat
+            ramah."
+          </p>
+        </div>
+        <div
+          class="flex items-center gap-3 border-t border-emerald-800/80 pt-4"
+        >
+          <div
+            class="w-10 h-10 rounded-full bg-amber-500 text-emerald-950 font-bold flex items-center justify-center text-sm"
+          >
+            NF
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-white">Ibu Nurul Fadilah</h4>
+            <span class="text-xs text-emerald-300"
+              >Guru • Anggota Simpanan Syariah</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lokasi Kantor & Peta -->
+<section id="lokasi" class="py-16 bg-white border-t border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+    >
+      <div class="space-y-4">
+        <span
+          class="text-emerald-700 font-bold text-xs uppercase tracking-wider"
+          >Kunjungi Kantor Kami</span
+        >
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          <%= info.cabang %>
+        </h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Silakan datang langsung ke kantor pelayanan kami untuk berkonsultasi
+          mengenai produk simpanan maupun pengajuan pembiayaan syariah.
+        </p>
+
+        <div class="space-y-3 pt-2 text-sm text-slate-700">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot text-emerald-700 mt-1"></i>
+            <span><strong>Alamat:</strong> <%= info.alamat %></span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-clock text-emerald-700"></i>
+            <span
+              ><strong>Jam Layanan:</strong> <%= info.jamOperasional %></span
+            >
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-emerald-700"></i>
+            <span><strong>Telepon / WA:</strong> <%= info.telepon %></span>
+          </div>
+        </div>
+
+        <div class="pt-3">
+          <a
+            href="<%= info.mapsLink %>"
+            target="_blank"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-sm shadow transition"
+          >
+            <i class="fa-solid fa-diamond-turn-right"></i> Buka Petunjuk Arah
+            (Google Maps)
+          </a>
+        </div>
+      </div>
+
+      <!-- Embed Peta Google Maps -->
+      <div
+        class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-sm"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253573.816634136!2d108.3587779!3d-6.7596377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee2649e6e5bbb%3A0x70a07638a7fe12fe!2sKabupaten%20Cirebon%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Form Pendaftaran Calon Anggota -->
+<section
+  id="daftar"
+  class="py-16 lg:py-20 bg-slate-50 border-t border-slate-200/70"
+>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm"
+    >
+      <div class="text-center mb-8">
+        <span
+          class="text-emerald-700 font-bold text-xs uppercase tracking-wider"
+          >Bergabung Sekarang</span
+        >
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Formulir Calon Anggota
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Isi data di bawah ini untuk terhubung langsung dengan petugas layanan
+          anggota kami via WhatsApp.
+        </p>
+      </div>
+
+      <form
+        id="form-pendaftaran"
+        data-whatsapp="<%= info.whatsapp %>"
+        class="space-y-5"
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-1.5"
+              >Nama Lengkap</label
+            >
+            <input
+              id="form-nama"
+              type="text"
+              required
+              placeholder="Contoh: Ahmad Fauzi"
+              class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-emerald-600 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-1.5"
+              >Nomor WhatsApp</label
+            >
+            <input
+              id="form-telepon"
+              type="tel"
+              required
+              placeholder="Contoh: 08123456789"
+              class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-emerald-600 focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5"
+            >Kebutuhan Layanan</label
+          >
+          <select
+            id="form-layanan"
+            class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-emerald-600 focus:outline-none"
+          >
+            <option value="Pendaftaran Anggota Baru">
+              Pendaftaran Anggota Baru
+            </option>
+            <option value="Simpanan Syariah">
+              Pembukaan Rekening Simpanan Syariah
+            </option>
+            <option value="Pembiayaan Syariah">
+              Pengajuan Pembiayaan Syariah
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-1.5"
+            >Keterangan / Domisili (Opsional)</label
+          >
+          <textarea
+            id="form-pesan"
+            rows="3"
+            placeholder="Tuliskan alamat singkat atau kebutuhan pengajuan Anda..."
+            class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-emerald-600 focus:outline-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-4 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-sm sm:text-base shadow-lg transition flex items-center justify-center gap-2"
+        >
+          <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Pengajuan via
+          WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Modal Tabel Rincian Angsuran -->
+<div
+  id="modal-rincian"
+  class="hidden fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4"
+>
+  <div
+    class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden"
+  >
+    <!-- Header Modal -->
+    <div
+      class="bg-emerald-950 text-white px-6 py-4 flex justify-between items-center"
+    >
+      <div>
+        <h3 class="font-bold text-base sm:text-lg">
+          Rincian Jadwal Angsuran Syariah
+        </h3>
+        <p id="modal-ringkasan" class="text-xs text-amber-400 mt-0.5">
+          Plafon Rp 5.000.000 • 12 Bulan
+        </p>
+      </div>
+      <button
+        type="button"
+        id="btn-tutup-modal"
+        class="text-emerald-200 hover:text-white text-xl"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Isi Tabel (Scrollable) -->
+    <div class="p-6 overflow-y-auto flex-1">
+      <div class="overflow-x-auto border border-slate-200 rounded-xl">
+        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+              <th class="py-3 px-4 font-bold">Angsuran Ke</th>
+              <th class="py-3 px-4 font-bold">Porsi Pokok</th>
+              <th class="py-3 px-4 font-bold">Margin / Bagi Hasil</th>
+              <th class="py-3 px-4 font-bold">Total Bayar</th>
+              <th class="py-3 px-4 font-bold">Sisa Pokok</th>
+            </tr>
+          </thead>
+          <tbody
+            id="tabel-rincian-body"
+            class="divide-y divide-slate-100 text-slate-700"
+          >
+            <!-- Diisi otomatis oleh script.js -->
+          </tbody>
+        </table>
+      </div>
+      <p class="text-[11px] text-slate-500 mt-3">
+        *Transparansi Akad: Nilai angsuran bersifat tetap (flat) hingga lunas
+        tanpa bunga berbunga atau denda ribawi.
+      </p>
+    </div>
+
+    <!-- Footer Modal -->
+    <div
+      class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end gap-3"
+    >
+      <button
+        type="button"
+        id="btn-tutup-modal-bawah"
+        class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-semibold text-xs sm:text-sm hover:bg-slate-100 transition"
+      >
+        Tutup
+      </button>
+      <button
+        type="button"
+        id="btn-ajukan-dari-modal"
+        class="px-5 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs sm:text-sm transition"
+      >
+        Ajukan Skema Ini
+      </button>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

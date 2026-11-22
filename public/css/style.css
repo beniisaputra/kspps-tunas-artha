@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Pola Geometris Islami Halus untuk Hero Section */
+.islamic-pattern {
+  background-color: #064e3b;
+  background-image:
+    radial-gradient(#047857 1px, transparent 1px),
+    radial-gradient(#047857 1px, #064e3b 1px);
+  background-size: 40px 40px;
+  background-position:
+    0 0,
+    20px 20px;
+}
+
+/* Kustomisasi Range Slider Kalkulator */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d1fae5;
+  height: 8px;
+  border-radius: 999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #d97706;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
